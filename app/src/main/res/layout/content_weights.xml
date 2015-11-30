@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_weights" tools:context="cse280.fitfastapp.Cardio"
+    android:orientation="vertical">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_weight="0.00"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Weight:"
+        android:id="@+id/textView31"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.00" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edit_weight"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.00"
+        android:hint="Weight lifted" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Reps:"
+        android:id="@+id/textView31"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.00" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edit_time"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.00"
+        android:hint="Number of reps" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sets:"
+        android:id="@+id/textView19"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.00" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edit_distance"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.00"
+        android:hint="Number of sets" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Today&apos;s Calories Burned:"
+        android:id="@+id/textView32"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.00" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/calories_burned_display"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.00" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:id="@+id/button5"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.00"
+        android:onClick="calcBurned" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Workouts"
+        android:id="@+id/button11"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.00"
+        android:onClick="back" />
+</LinearLayout>
