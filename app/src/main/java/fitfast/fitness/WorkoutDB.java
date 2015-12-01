@@ -1,7 +1,8 @@
 package fitfast.fitness;
-
 import java.util.*;
-
+/*
+unused class, used for documentation and reference
+*/
 public class WorkoutDB
 {
   private static Map<String,Integer> idList = new HashMap<>();

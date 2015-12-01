@@ -105,6 +105,7 @@ public class Stats extends AppCompatActivity {
 
     }
 
+
     public void onRadioButtonClicked(View view) {
         boolean checked = ((RadioButton) view).isChecked();
         SharedPreferences.Editor editor = sPref.edit();

@@ -40,18 +40,24 @@
             android:layout_alignBottom="@+id/button7"
             android:layout_toLeftOf="@+id/button7"
             android:layout_toStartOf="@+id/button7"
-            android:layout_weight="0.92"
+            android:layout_weight="0.80"
             android:singleLine="true" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="84dp"
             android:layout_height="wrap_content"
             android:text="@string/enter"
             android:id="@+id/button7"
-            android:layout_below="@+id/textView16"
-            android:layout_toRightOf="@+id/textView16"
-            android:layout_toEndOf="@+id/textView16"
-            android:onClick="addTotal" />
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:onClick="addTotal"
+            android:layout_weight="0.20" />
 
     </LinearLayout>
 
@@ -81,8 +87,13 @@
         android:layout_height="wrap_content"
         android:text="@string/back_to_dashboard"
         android:id="@+id/button8"
-        android:layout_below="@+id/calories_eaten_display"
-        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         android:layout_marginTop="40dp"
         android:onClick="toDash"
         android:layout_gravity="center_horizontal" />

@@ -61,17 +61,20 @@ public class Workout extends AppCompatActivity {
     public void addTotal(View view) {
 
         int calories;
-
-        if(calsBurned.length()<6) {
-            calories = Integer.parseInt(calsBurned.getText().toString());
-            SharedPreferences.Editor editor = sPref.edit();
-            editor.putInt(caloriesKey,caloriesBurned += calories);
-            editor.commit();
-            caloriesBurnedDisplay.setText(Integer.toString(caloriesBurned));
-            calsBurned.setText("");
+        try {
+            if (calsBurned.length() < 6) {
+                calories = Integer.parseInt(calsBurned.getText().toString());
+                SharedPreferences.Editor editor = sPref.edit();
+                editor.putInt(caloriesKey, caloriesBurned += calories);
+                editor.commit();
+                caloriesBurnedDisplay.setText(Integer.toString(caloriesBurned));
+                calsBurned.setText("");
+            } else {
+                Toast.makeText(getApplicationContext(), "Calories value is too large", Toast.LENGTH_LONG).show();
+            }
         }
-        else    {
-           Toast.makeText(getApplicationContext(), "Calories value is too large", Toast.LENGTH_LONG).show();
+        catch(Exception e){
+            Toast.makeText(getApplicationContext(), "Please enter a calorie value", Toast.LENGTH_LONG).show();
         }
 
     }

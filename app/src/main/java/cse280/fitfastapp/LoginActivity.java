@@ -19,6 +19,7 @@ import android.os.Build.VERSION;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -86,6 +87,10 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CreateAccount.class);
 
         startActivityForResult(intent, RESULT_OK);
+        mEmailView = (EditText) findViewById(R.id.userName);
+        mEmailView.setText("");
+        mPasswordView = (EditText) findViewById(R.id.password);
+        mPasswordView.setText("");
 
 
     }
@@ -104,6 +109,10 @@ public class LoginActivity extends AppCompatActivity {
         else{
             Toast.makeText(mContext, "The username or password is incorrect", Toast.LENGTH_LONG).show();
         }
+        mEmailView = (EditText) findViewById(R.id.userName);
+        mEmailView.setText("");
+        mPasswordView = (EditText) findViewById(R.id.password);
+        mPasswordView.setText("");
 
 
     }

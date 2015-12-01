@@ -58,20 +58,23 @@ public class CalorieInput extends AppCompatActivity {
 
 
             int calories;
-
-            if(calsIn.length()<6) {
+        try {
+            if (calsIn.length() < 6) {
                 calories = Integer.parseInt(calsIn.getText().toString());
                 SharedPreferences.Editor editor = sPref.edit();
-                editor.putInt(caloriesKey,caloriesIn+=calories);
+                editor.putInt(caloriesKey, caloriesIn += calories);
 
                 editor.commit();
 
                 caloriesEatenDisplay.setText(Integer.toString(caloriesIn));
                 calsIn.setText("");
-            }
-            else    {
+            } else {
                 Toast.makeText(getApplicationContext(), "Calories value is too large", Toast.LENGTH_LONG).show();
             }
+        }
+        catch(Exception e){
+            Toast.makeText(getApplicationContext(), "Please enter a calorie amount", Toast.LENGTH_LONG).show();
+        }
 
         }
     }

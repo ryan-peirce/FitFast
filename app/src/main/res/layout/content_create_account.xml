@@ -279,11 +279,19 @@
     </LinearLayout>
 
     <Button
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/done"
         android:id="@+id/done"
         android:layout_gravity="center_horizontal"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         android:onClick="done" />
 
 

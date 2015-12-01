@@ -35,7 +35,7 @@ public class CreateAccount extends AppCompatActivity {
     private final String ageKey = "age";
     private final String heightKey = "height";
     private final String weightKey = "weight";
-    private final String goalKey = "target";
+    private final String goalKey = "goal";
     private final String passwordKey = "password";
     private final String desiredWorkoutsKey = "desired_workouts";
     private Context mContext;
