@@ -121,11 +121,14 @@ public class CreateAccount extends AppCompatActivity {
 
     @TargetApi(21)
     public void clearRed(){
-        male.setButtonTintList(android.content.res.ColorStateList.valueOf(Color.DKGRAY));
-        female.setButtonTintList(android.content.res.ColorStateList.valueOf(Color.DKGRAY));
-        one.setButtonTintList(android.content.res.ColorStateList.valueOf(Color.DKGRAY));
-        two.setButtonTintList(android.content.res.ColorStateList.valueOf(Color.DKGRAY));
-        three.setButtonTintList(android.content.res.ColorStateList.valueOf(Color.DKGRAY));
+        try {
+            male.setButtonTintList(android.content.res.ColorStateList.valueOf(Color.DKGRAY));
+            female.setButtonTintList(android.content.res.ColorStateList.valueOf(Color.DKGRAY));
+            one.setButtonTintList(android.content.res.ColorStateList.valueOf(Color.DKGRAY));
+            two.setButtonTintList(android.content.res.ColorStateList.valueOf(Color.DKGRAY));
+            three.setButtonTintList(android.content.res.ColorStateList.valueOf(Color.DKGRAY));
+        }
+        catch (NoSuchMethodError e){}
 
     }
 
@@ -145,20 +148,27 @@ public class CreateAccount extends AppCompatActivity {
         String name = editName.getText().toString().toLowerCase().trim();
         String password = editPassword.getText().toString().trim();
 
+
         clearRed();
 
 
         if(male.isChecked() == false && female.isChecked() == false){
             errors += 1;
             error = "Please select a gender";
-            genderRed();
+            try {
+                genderRed();
+            }
+            catch (NoSuchMethodError e){}
 
         }
 
         if(one.isChecked() == false && three.isChecked() == false && two.isChecked() == false){
             errors += 1;
             error = "Please select a timeframe";
-            timeRed();
+            try {
+                timeRed();
+            }
+            catch (NoSuchMethodError e){}
         }
 
         try {

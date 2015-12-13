@@ -5,7 +5,7 @@
     <!-- Activity Title Strings -->
     <string name="title_activity_dash">Dashboard</string>
 
-    <string name="title_activity_login">Login</string>
+    <string name="title_activity_login">FitFast</string>
     <string name="title_activity_calorie_input">Calorie Input</string>
     <string name="title_activity_dash_board">Dashboard</string>
     <string name="title_activity_stats">User Stats</string>
