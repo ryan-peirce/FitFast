@@ -1,4 +1,2 @@
 # FitFast-Android
-An Android App to Help Follow A Healthier Lifestyle
-
-# List of Helpful Links
+College project. Android fitness app. Demo here: https://www.youtube.com/watch?v=D6JXkHevQwo.
